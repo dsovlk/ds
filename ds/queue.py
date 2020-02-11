@@ -15,7 +15,7 @@ class Queue:
         self.items.insert(0, item)
 
     def dequeue(self):
-        return self.items.pop()
+        return self.items.pop() if not self.isEmpty() else None
 
     def size(self):
         return len(self.items)

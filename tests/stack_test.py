@@ -32,6 +32,9 @@ class StackTest(unittest.TestCase):
         self.assertEqual('B', x)
         self.assertEqual(2, self.s.size())
 
+    def test_empty(self):
+            self.assertEqual(self.s.peek(), None)
+
 
 if __name__ == '__main__':
     unittest.main()
